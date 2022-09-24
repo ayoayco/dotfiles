@@ -1,0 +1,126 @@
+{
+  "git.autofetch": true,
+  "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+  "git.enableSmartCommit": true,
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["5", "h"]
+    },
+    {
+      "before": ["L"],
+      "after": ["5", "l"]
+    },
+    {
+      "before": ["="],
+      "after": ["-"]
+    },
+    {
+      "before": ["-"],
+      "after": ["+"]
+    }
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["5", "h"]
+    },
+    {
+      "before": ["L"],
+      "after": ["5", "l"]
+    },
+    {
+      "before": ["="],
+      "after": ["-"]
+    },
+    {
+      "before": ["-"],
+      "after": ["+"]
+    }
+  ],
+  "workbench.colorTheme": "Shades of Purple",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "nativescript.analytics.enabled": true,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "shifty.colorThemes.ignoreColorThemes": [
+    "Keen Contrast (rainglow)",
+    "Rebellion Light (rainglow)",
+    "Winter is Coming (Light)"
+  ],
+  "shifty.colorThemes.favoriteColorThemes": [
+    "Comrade Light (rainglow)",
+    "Crisp Light (rainglow)",
+    "Dare Contrast (rainglow)",
+    "Friction (rainglow)",
+    "Hive (rainglow)",
+    "Laracasts (rainglow)",
+    "Spearmint (rainglow)",
+    "Waste (rainglow)",
+    "Winter is Coming (Light)"
+  ],
+  "shifty.fontFamilies.ignoreFontFamilies": ["Cutive Mono", "ProggyCleanTTSZ"],
+  "shifty.fontFamilies.favoriteFontFamilies": [
+    "consolas",
+    "Consolas",
+    "FreeMono",
+    "Inconsolata-dz",
+    "Mensch",
+    "Office Code Pro"
+  ],
+  "shifty.colorThemes.ignoreDarkColorThemes": true,
+  "shifty.colorThemes.ignoreHighContrastColorThemes": true,
+  "shifty.fontFamilies.fallbackFontFamily": "consolas",
+  "shifty.shiftInterval.shiftColorThemeIntervalMin": 0,
+  "shifty.shiftInterval.shiftFontFamilyIntervalMin": 0,
+  "shifty.shiftMode": "favorites",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "oneDarkPro.vivid": true
+}
