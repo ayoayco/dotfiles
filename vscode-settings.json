@@ -122,5 +122,26 @@
   "editor.wordWrapColumn": 100,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
-  "oneDarkPro.vivid": true
+  "oneDarkPro.vivid": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Shades of Purple (Super Dark)",
+  "workbench.preferredLightColorTheme": "Shades of Purple",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.confirmSync": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.semanticHighlighting.enabled": true,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Shades of Purple (Super Dark)"
 }
