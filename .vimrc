@@ -78,8 +78,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 """"""""""" Open NERDTree by default
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 
 """"""""""" Start Enable Vundle
@@ -106,15 +106,16 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'instant-markdown/vim-instant-markdown'
+" Plugin 'instant-markdown/vim-instant-markdown'
 Plugin 'ervandew/supertab'                          " better tab completion
 Plugin 'leafgarland/typescript-vim'
 
 """ Syntax highlighting
 Plugin 'Sheerun/vim-polyglot'
+Plugin 'wuelnerdotexe/vim-astro'
 
 """ Themes
-Plugin 'ryanoasis/vim-devicons'
+" Plugin 'ryanoasis/vim-devicons'
 Plugin 'morhetz/gruvbox'
 Plugin 'Rigellute/shades-of-purple.vim'
 Plugin 'NLKNguyen/papercolor-theme'
@@ -183,16 +184,20 @@ if has("gui_running")
   endif
 endif
 
+" set directory where swap files are stored
+set swapfile
+set dir=~/.tmp
+
 " set window size
-if has("gui_running")
-  " GUI is running or is about to start.
-  set lines=50 columns=200
-else
-  " This is console Vim.
-  if exists("+lines")
-    set lines=50
-  endif
-  if exists("+columns")
-    set columns=200
-  endif
-endif
+" if has("gui_running")
+"   " GUI is running or is about to start.
+"   set lines=50 columns=200
+" else
+"   " This is console Vim.
+"   if exists("+lines")
+"     set lines=50
+"   endif
+"   if exists("+columns")
+"     set columns=200
+"   endif
+" endif
