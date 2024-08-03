@@ -143,5 +143,10 @@
   "explorer.confirmDragAndDrop": false,
   "editor.semanticHighlighting.enabled": true,
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Shades of Purple (Super Dark)"
+  "workbench.colorTheme": "Shades of Purple (Super Dark)",
+  "files.exclude": {
+    "*~": true,
+    "*swo": true,
+    "*swp": true
+  }
 }
