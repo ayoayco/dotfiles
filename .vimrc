@@ -1,6 +1,4 @@
 set encoding=UTF-8
-set nobackup
-set nowritebackup
 
 set wrap
 set linebreak
@@ -185,8 +183,11 @@ if has("gui_running")
 endif
 
 " set directory where swap files are stored
+silent !mkdir -p ~/.vim/swap > /dev/null 2>&1
+silent !mkdir -p ~/.vim/backup > /dev/null 2>&1
 set swapfile
-set dir=~/.tmp
+set directory=$HOME/.vim/swap//
+set backupdir=$HOME/.vim/backup//
 
 " set window size
 " if has("gui_running")
