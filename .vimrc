@@ -6,19 +6,6 @@ set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['eslint', 'tsc']
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-
-
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.*~  " Windows
 
 highlight LineNr ctermfg=grey
@@ -47,7 +34,7 @@ autocmd GUIEnter * set visualbell t_vb=
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 map  <C-n> :NERDTreeToggle<CR>
-map  <C-p> :find 
+map  <C-p> :find
 " xmap  <C-q> :wq<CR>
 
 """ from Andrew
@@ -101,12 +88,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
 " Plugin 'instant-markdown/vim-instant-markdown'
 Plugin 'ervandew/supertab'                          " better tab completion
 Plugin 'leafgarland/typescript-vim'
+Plugin 'dense-analysis/ale'
 
 """ Syntax highlighting
 Plugin 'Sheerun/vim-polyglot'
@@ -202,3 +189,11 @@ set backupdir=$HOME/.vim/backup//
 "     set columns=200
 "   endif
 " endif
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint', 'prettier'],
+\}
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
