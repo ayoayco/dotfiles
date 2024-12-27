@@ -1,15 +1,12 @@
 {
   "git.autofetch": true,
   "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
-  "git.enableSmartCommit": true,
-
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
     }
   ],
-
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -44,7 +41,6 @@
       "after": ["+"]
     }
   ],
-
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -79,53 +75,15 @@
       "after": ["+"]
     }
   ],
-  "workbench.colorTheme": "Shades of Purple",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "nativescript.analytics.enabled": true,
-  "window.zoomLevel": 0,
   "workbench.iconTheme": "vscode-icons",
-  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "shifty.colorThemes.ignoreColorThemes": [
-    "Keen Contrast (rainglow)",
-    "Rebellion Light (rainglow)",
-    "Winter is Coming (Light)"
-  ],
-  "shifty.colorThemes.favoriteColorThemes": [
-    "Comrade Light (rainglow)",
-    "Crisp Light (rainglow)",
-    "Dare Contrast (rainglow)",
-    "Friction (rainglow)",
-    "Hive (rainglow)",
-    "Laracasts (rainglow)",
-    "Spearmint (rainglow)",
-    "Waste (rainglow)",
-    "Winter is Coming (Light)"
-  ],
-  "shifty.fontFamilies.ignoreFontFamilies": ["Cutive Mono", "ProggyCleanTTSZ"],
-  "shifty.fontFamilies.favoriteFontFamilies": [
-    "consolas",
-    "Consolas",
-    "FreeMono",
-    "Inconsolata-dz",
-    "Mensch",
-    "Office Code Pro"
-  ],
-  "shifty.colorThemes.ignoreDarkColorThemes": true,
-  "shifty.colorThemes.ignoreHighContrastColorThemes": true,
-  "shifty.fontFamilies.fallbackFontFamily": "consolas",
-  "shifty.shiftInterval.shiftColorThemeIntervalMin": 0,
-  "shifty.shiftInterval.shiftFontFamilyIntervalMin": 0,
-  "shifty.shiftMode": "favorites",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "oneDarkPro.vivid": true,
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Shades of Purple (Super Dark)",
-  "workbench.preferredLightColorTheme": "Shades of Purple",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -138,16 +96,35 @@
   "security.workspace.trust.untrustedFiles": "open",
   "git.confirmSync": false,
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.confirmDragAndDrop": false,
   "editor.semanticHighlighting.enabled": true,
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Shades of Purple (Super Dark)",
   "files.exclude": {
-    "**/.astro": true,
     "*~": true,
     "*swo": true,
     "*swp": true
-  }
+  },
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "vim.useCtrlKeys": false,
+  "workbench.preferredDarkColorTheme": "Shades of Purple",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
+  "editor.formatOnSave": true,
+  "prettier.configPath": "",
+  "prettier.ignorePath": "",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.suggestSmartCommit": false
 }
